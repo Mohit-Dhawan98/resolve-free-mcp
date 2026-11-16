@@ -1,0 +1,9 @@
+[project]
+name = "resolve-free-mcp"
+version = "0.1.0"
+description = "MCP server for DaVinci Resolve FREE via a Lua console bridge (file mailbox)"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Mohit Dhawan", email = "mohit.dhawan2510@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.2,<2"]
