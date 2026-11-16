@@ -16,9 +16,9 @@ Claude ── MCP ──> server.py ── inbox/cmd_N.lua ──> bridge.lua (i
 
 ## The return channel
 
-Getting commands in is easy. Getting results out is the interesting part: the
-console's Lua has no usable way to write an arbitrary file, but it can export a
-timeline. So each command:
+Getting commands in is easy. Getting results out is the interesting part.
+Rather than depend on file I/O from the console, the bridge uses something the
+API is guaranteed to offer: exporting a timeline. So each command:
 
 1. runs its Lua body inside `pcall`,
 2. cuts the result string into 110-character chunks,
